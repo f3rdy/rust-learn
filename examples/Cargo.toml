@@ -2,7 +2,7 @@
 name = "examples"
 version = "0.1.0"
 authors = ["Fred Thiele <ferdy at mailbox dot org >"]
-edition = "2020"
+edition = "2018"
 
 [[bin]]
 name = "clapcli"
