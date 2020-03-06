@@ -1,0 +1,22 @@
+[package]
+name = "examples"
+version = "0.1.0"
+authors = ["Fred Thiele <fred.thiele@diva-e.com>"]
+edition = "2018"
+
+[[bin]]
+name = "clapcli"
+path = "src/cli_with_clap.rs"
+
+[[bin]]
+name = "simpcli"
+path = "src/simple_cli_with_log.rs"
+
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+structopt = "0.2.10"
+simple_logger = "1.6.0"
+log = { version = "0.4", features = ["max_level_debug", "release_max_level_warn"] }
+clap = "2.33.0"
